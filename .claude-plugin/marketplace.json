@@ -1,0 +1,49 @@
+{
+  "name": "CoworkPluginsByDojoGenesis",
+  "owner": {
+    "name": "Dojo Genesis",
+    "email": "cruz@trespiesdesign.com"
+  },
+  "metadata": {
+    "description": "A practice space for building better software through patient cultivation. 44 skills organized into 7 behavioral plugins — each one a different way of paying attention to your work. Governance multiplies velocity.",
+    "version": "1.1.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "strategic-thinking",
+      "source": "./plugins/strategic-thinking",
+      "description": "Begin with a tension, not a solution. Scout the landscape of possibility before committing to a path. Position products, design multi-surface strategies, and bridge the gap between vision and execution."
+    },
+    {
+      "name": "specification-driven-development",
+      "source": "./plugins/specification-driven-development",
+      "description": "A specification is a contract, not documentation — an act of respect for the builder's time. Write specs grounded in measured reality, transform them into self-contained implementation prompts, and commission parallel tracks with pre-flight alignment."
+    },
+    {
+      "name": "wisdom-garden",
+      "source": "./plugins/wisdom-garden",
+      "description": "Knowledge is planted, cultivated, and harvested — not created, stored, and retrieved. Compress session context into lasting memory, reflect on patterns as seeds, and elevate proven seeds into reusable skills."
+    },
+    {
+      "name": "system-health",
+      "source": "./plugins/system-health",
+      "description": "You cannot improve what you do not observe. Audit ecosystem health, map semantic clusters across codebases, track documentation drift, and sync repository context to keep the soil healthy for future growth."
+    },
+    {
+      "name": "continuous-learning",
+      "source": "./plugins/continuous-learning",
+      "description": "The process is the purpose. Harvest learnings from sprints through structured retrospectives, explore research deeply and widely, diagnose problems systematically, and let curiosity guide exploration of new projects."
+    },
+    {
+      "name": "agent-orchestration",
+      "source": "./plugins/agent-orchestration",
+      "description": "Handoffs are sacred relays, not tosses over the wall. Coordinate work across autonomous agents with full context preservation, navigate shared workspaces, teach peer-to-peer, and propagate decisions through living document ecosystems."
+    },
+    {
+      "name": "skill-forge",
+      "source": "./plugins/skill-forge",
+      "description": "The meta-layer — skills about making skills. Create, maintain, and evolve the reusable patterns that power every other plugin. Good governance of the forge multiplies the velocity of everything built in it."
+    }
+  ]
+}
