@@ -14,6 +14,7 @@ Agent Orchestration conducts the ensemble. It routes work between agents, teache
 | workspace-navigation | Share context and tools across agents |
 | agent-teaching | Transfer knowledge and patterns in handoffs |
 | decision-propagation | Ensure decisions flow to all who need them |
+| granular-visibility | Track progress at the level the user needs to steer |
 
 ## When to use
 

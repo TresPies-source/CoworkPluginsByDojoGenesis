@@ -5,9 +5,10 @@ description: Write production-ready, A+ quality specifications for software rele
 
 # Specification Writer Skill
 
-**Version:** 1.0  
-**Created:** 2026-02-02  
-**Author:** Manus  
+**Version:** 1.1
+**Created:** 2026-02-02
+**Updated:** 2026-02-16
+**Author:** Manus
 **Purpose:** Write production-ready, A+ quality specifications for software releases
 
 ---
@@ -30,6 +31,59 @@ This skill encodes the pattern for writing comprehensive, technically rigorous s
 
 ---
 
+## Choosing the Right Format
+
+The specification template is a **maximum, not a default**. Calibrate your format to the scope, audience, and context. Use the appropriate tier:
+
+### Full Template: Strategic & Architectural Specs
+
+**Use for:** Complex systems, new architectures, major releases, multi-component integrations, high-risk decisions
+
+**Includes:** Vision, goals, success criteria, detailed technical architecture, implementation plan, risk assessment, rollback procedures, monitoring, documentation strategy, appendices
+
+**When to choose:** Your audience includes stakeholders, architects, or future maintainers who need to understand the "why" and "how." The release is substantial enough to warrant comprehensive documentation. Architecture is novel or the system integration is complex.
+
+**Typical length:** 5,000-15,000+ words
+
+### Lean Format: Implementation-Ready Feature Specs
+
+**Use for:** Well-understood features, implementation-scoped work, autonomous agent execution, rapid iteration cycles
+
+**Includes:** Brief context (why this matters), component tables, behavior lists, route/API layouts, code examples, test cases. Skip: preamble, vision section, lengthy risk analysis, extensive documentation strategy
+
+**When to choose:** The feature is well-scoped and the audience is an implementation agent (human developer or AI). The problem is well-understood. You're optimizing for speed and clarity, not stakeholder alignment.
+
+**Typical length:** 1,000-3,000 words
+
+**Structure (sonnet level chunks):**
+- **Feature Name & Context** (2-3 sentences)
+- **Components Table** (what, where, why)
+- **API/Routes Table** (endpoint, method, request, response)
+- **Behavior List** (numbered or bulleted behaviors)
+- **Implementation Code Blocks** (production-ready examples)
+- **Test Cases** (unit, integration, edge cases)
+- **Rollout Notes** (if applicable)
+
+### Minimal Format: Incremental Changes & Bug Fixes
+
+**Use for:** Bug fixes, small enhancements, well-established patterns, dependency updates
+
+**Includes:** Delta description (what changed), code examples, test cases, affected components
+
+**When to choose:** The change is localized and low-risk. The implementation pattern is proven. You're optimizing for minimal documentation overhead.
+
+**Typical length:** 200-1,000 words
+
+### Decision Heuristic
+
+Ask yourself:
+- **Is the audience an autonomous implementation agent and the feature is well-scoped?** → Use **Lean Format**
+- **Do stakeholders need to understand the vision and architecture is novel?** → Use **Full Template**
+- **Is this a small, isolated change to a proven pattern?** → Use **Minimal Format**
+- **Uncertain?** Lean toward the **Full Template** to ensure completeness
+
+---
+
 ## The A+ Specification Template
 
 ### Part 1: Vision & Context (10-15% of document)
@@ -37,9 +91,9 @@ This skill encodes the pattern for writing comprehensive, technically rigorous s
 ```markdown
 # [Project Name] v[X.X.X]: [Memorable Tagline]
 
-**Author:** [Your Name]  
-**Status:** [Draft | Final | Approved]  
-**Created:** [Date]  
+**Author:** [Your Name]
+**Status:** [Draft | Final | Approved]
+**Created:** [Date]
 **Grounded In:** [What this builds on - previous versions, research, feedback]
 
 ## 1. Vision
@@ -119,9 +173,9 @@ interface [InterfaceName] {
 
 export const [ComponentName]: React.FC<Props> = ({ prop1, prop2 }) => {
   const [state, setState] = useState<StateType>(initialState);
-  
+
   // Implementation
-  
+
   return (
     <div className="...">
       {/* JSX */}
@@ -336,6 +390,11 @@ Before finalizing a specification, verify:
 - [ ] Feature flags are defined for gradual rollout
 - [ ] Monitoring and alerting strategy is specified
 
+### Format & Audience Alignment
+- [ ] Format matches scope and audience (not defaulting to heavyweight when lean would serve better)
+- [ ] If using lean format: essential components are present, preamble is minimal
+- [ ] If using full template: all sections provide genuine value and aren't template padding
+
 ### Documentation
 - [ ] User-facing documentation plan is included
 - [ ] Developer documentation updates are listed
@@ -371,31 +430,33 @@ Before finalizing a specification, verify:
 
 ## Common Pitfalls to Avoid
 
-❌ **Vague Goals:** "Improve user experience" → ✅ "Reduce context loading time by 50%"  
-❌ **Missing Code Examples:** High-level description only → ✅ Complete, runnable code  
-❌ **Unrealistic Timelines:** "2 days for full backend" → ✅ "2 weeks with phased approach"  
-❌ **No Risk Assessment:** Assumes everything will work → ✅ Identifies risks and mitigations  
-❌ **Incomplete Testing:** "We'll test it" → ✅ Specific test cases and coverage targets  
+❌ **Vague Goals:** "Improve user experience" → ✅ "Reduce context loading time by 50%"
+❌ **Missing Code Examples:** High-level description only → ✅ Complete, runnable code
+❌ **Unrealistic Timelines:** "2 days for full backend" → ✅ "2 weeks with phased approach"
+❌ **No Risk Assessment:** Assumes everything will work → ✅ Identifies risks and mitigations
+❌ **Incomplete Testing:** "We'll test it" → ✅ Specific test cases and coverage targets
 ❌ **No Integration Points:** Treats feature as isolated → ✅ Documents how it connects to existing system
+❌ **Using Full Template for Well-Scoped Features:** Wastes tokens and delays commissioning → ✅ Use lean format for autonomous implementation agents with clear scope
 
 ---
 
 ## Usage Instructions
 
-1. **Read this skill** before writing any specification
-2. **Copy the template** structure to your new document
-3. **Fill in each section** with specific, detailed content
-4. **Run the quality checklist** before finalizing
-5. **Study example specifications** for patterns and depth
-6. **Iterate** until every checklist item is ✅
+1. **Assess scope and audience** before choosing format
+2. **Select the appropriate format tier** (Full Template, Lean, or Minimal)
+3. **Copy the relevant template structure** to your new document
+4. **Fill in each section** with specific, detailed content
+5. **Run the quality checklist** before finalizing (including format alignment)
+6. **Study example specifications** for patterns and depth
+7. **Iterate** until every checklist item is ✅
 
 ---
 
 ## Skill Metadata
 
-**Token Savings:** ~10,000-15,000 tokens per specification (no need to re-read old specs for patterns)  
-**Quality Impact:** Ensures consistency across all specifications  
-**Maintenance:** Update when new patterns emerge from successful releases  
+**Token Savings:** ~10,000-15,000 tokens per full spec; ~2,000-5,000 per lean spec (adaptive format efficiency)
+**Quality Impact:** Ensures consistency across all specifications while optimizing for context
+**Maintenance:** Update when new patterns emerge from successful releases
 
 **Related Skills:**
 - `memory-garden` - For documenting learnings from implementation
@@ -404,6 +465,6 @@ Before finalizing a specification, verify:
 
 ---
 
-**Last Updated:** 2026-02-02  
-**Maintained By:** Manus  
-**Status:** Active
+**Last Updated:** 2026-02-16
+**Maintained By:** Manus
+**Status:** Active (v1.1 with Lean Spec Adaptation guidance)

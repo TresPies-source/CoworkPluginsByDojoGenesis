@@ -18,6 +18,7 @@ System Health watches the growing system. It audits documentation, tracks skill 
 | status-template | Structure consistent health reports |
 | repo-context-sync | Keep project structure aligned with reality |
 | repo-status | Snapshot current system state |
+| pointer-directories | Investigate empty directories before filling them |
 
 ## When to use
 

@@ -15,6 +15,7 @@ Wisdom Garden transforms raw learning into living seed banks of reusable insight
 | seed-extraction | Extract patterns from experience |
 | seed-library | Organize seeds by domain and use |
 | seed-to-skill-converter | Harvest seeds into reusable skills |
+| voice-before-structure | Ground structural artifacts in project philosophy |
 
 ## When to use
 

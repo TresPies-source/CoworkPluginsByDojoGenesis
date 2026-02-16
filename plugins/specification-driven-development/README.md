@@ -20,6 +20,8 @@ Specification-Driven Development cultivates precise contracts before a line of c
 | context-ingestion | Absorb existing context into specifications |
 | implementation-prompt | Convert spec directly into builder instructions |
 | spec-constellation-to-prompt-suite | Expand specs into coordinated prompt suites |
+| pre-commission-alignment | Quality gate before commissioning parallel tracks |
+| codebase-audit-grounding | Ground specs in measured codebase reality |
 
 ## When to use
 
