@@ -1,10 +1,12 @@
 # Cowork Plugins by Dojo Genesis
 
-**A practice space for building better software through patient cultivation.**
+**44 skills that make autonomous software development actually work.**
 
-44 skills organized into 7 behavioral plugins—each one a different way of paying attention to your work. From strategic scouting to specification writing to continuous learning, these plugins encode the patterns that make autonomous development actually work.
+AI agents are powerful but chaotic. They hallucinate requirements, forget context between sessions, skip verification, and produce work that needs rework. The problem isn't intelligence — it's discipline.
 
-**Governance multiplies velocity.**
+These plugins encode the discipline. 7 behavioral plugins, 44 skills — from strategic scouting to specification writing to structured retrospectives. Every skill exists because we needed it while shipping real software with autonomous agents. And then needed it again.
+
+**40-50% timeline reduction. 77 hours saved through pre-flight verification alone.**
 
 ## The Philosophy
 
